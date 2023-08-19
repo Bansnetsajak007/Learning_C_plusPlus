@@ -15,7 +15,6 @@ class Student {
 
         /*virtual functions tells the compiler that this 
         function's behavior can be overridden by derived classes.*/
-
         virtual void display_details(){
             cout << "Student Name: " << name <<endl;
             cout << "Student ID: " << id <<endl;

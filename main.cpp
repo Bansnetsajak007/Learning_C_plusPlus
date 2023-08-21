@@ -26,7 +26,7 @@ class ComputerScienceStudent : public Student{
     private:
         int cs_marks[3];
 
-    public:
+    public: 
         ComputerScienceStudent(const std::string& studentName, int studentId, int marks[3])
           : Student(studentName,studentId){
             for(int i = 0 ; i < 3 ; i++){

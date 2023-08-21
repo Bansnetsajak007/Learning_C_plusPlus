@@ -44,7 +44,7 @@ public:
 
 
 int main() {
-    BankAccount aliceAccount("Alice", 1000.0);
+    BankAccount aliceAccount("Alice", 100.0);
     BankAccount bobAccount("Bob", 500.0);
 
     aliceAccount.displayBalance();

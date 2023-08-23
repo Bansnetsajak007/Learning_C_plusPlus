@@ -10,8 +10,10 @@ class Students{
 
     public:
 
+        //default constructor
         Students(): age(0) {}
 
+        //parameteried constructors
         Students(const string& n, int a) : name(n), age(a) {}
 
         //getters methods const is used inorder to make sure that the value returned is not modified

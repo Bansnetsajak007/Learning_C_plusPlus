@@ -1,5 +1,5 @@
 /*
-    This pointer : special pointer in C++, available inside the methods of a class and points to the current instance of the class.
+    This pointer special pointer in C++, available inside the methods of a class and points to the current instance of the class.
     Main use is to distinguish class members from method parameters when they have the same name.
 */
 

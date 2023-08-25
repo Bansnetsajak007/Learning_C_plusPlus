@@ -17,7 +17,7 @@ class Student {
         function's behavior can be overridden by derived classes.*/
         virtual void display_details(){
             cout << "Student Name: " << name <<endl;
-            cout << "Student ID: " << id <<endl;
+            cout << "Student ID: " << id <<endl;    
         }
 };
 

@@ -7,7 +7,7 @@
 
     - Define static member function to display min_balance
 
-    -Create array of objects to store data of 5 accounts and read and display values of each object
+    -Create array of objects to store data of 2 accounts and read and display values of each object
 */
 
 
@@ -32,8 +32,8 @@ class Account{
                 }
 
          void displayData() {
-            cout << "Account Number: " << acc_no << std::endl;
-            cout << "Balance: " << balance << std::endl;
+            cout << "Account Number: " << acc_no << endl;
+            cout << "Balance: " << balance << endl;
             }
 
         static void displayMinBalance() {
@@ -46,22 +46,32 @@ double Account::minBalance = 100.0;
 
 int main(){
 
-    Account accounts[5];
+    Account* accounts[2];
 
-    for(int i = 0 ; i <= 5 ; i++){
-        cout<< "Enter Details of Account" <<i+1 <<endl;
-        accounts[i].read_data();
+    // Create objects using pointers
+    for (int i = 0; i < 2; ++i) {
+        accounts[i] = new Account();
+    }
+
+    for(int i = 0 ; i < 2 ; ++i){
+        cout<< "Enter Details of Account " <<i+1 <<endl;
+        accounts[i]->read_data();
         cout <<endl;
     }
 
     cout << "Account Details:" << endl;
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 2; ++i) {
         cout << "Account " << i + 1 << ":" << endl;
-        accounts[i].displayData();
+        accounts[i]->displayData();
         cout << endl;
     }
 
     Account::displayMinBalance();
+
+    // Clean up: delete objects
+    for (int i = 0; i < 2; ++i) {
+        delete accounts[i];
+    }
 
     return 0;
 }

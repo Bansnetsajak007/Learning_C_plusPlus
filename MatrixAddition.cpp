@@ -26,29 +26,30 @@ class Matrix{
     }
 
     void calculate(){
+        int i,j;
         cout<<"Enter elements in first matrix" <<endl;
-        for(int i = 0 ; i < row1 ; ++i){
-            for(int j = 0 ; j < col1 ; ++j){
+        for(i = 0 ; i < row1 ; ++i){
+            for(j = 0 ; j < col1 ; ++j){
                 cin >> array1 [i][j];
             }
         }
         cout<<"Enter elements in second matrix" <<endl;
-        for(int i = 0 ; i < row2 ; ++i){
-            for(int j = 0 ; j < col2 ; ++j){
-                cin >> array1 [i][j];
+        for(i = 0 ; i < row2 ; ++i){
+            for(j = 0 ; j < col2 ; ++j){
+                cin >> array2 [i][j];
             }
         }
 
         // cout<< "Additon of the two matrx are: " <<endl;
-        for(int i = 0 ; i < row1 ; ++i){
-            for(int j = 0 ; j < col1 ; ++j){
+        for(i = 0 ; i < row1 ; ++i){
+            for(j = 0 ; j < col1 ; ++j){
                 result [i][j] =  array1 [i][j] + array2[i][j];
             }
         }
         cout<< "Additon of the two matrx are: " <<endl;
-        for(int i = 0 ; i < row1 ; ++i){
-            for(int j = 0 ; j < col1 ; ++j){
-                cout << result[i][j];
+        for(i = 0 ; i < row1 ; ++i){
+            for(j = 0 ; j < col1 ; ++j){
+                cout << result[i][j] << " ";
             }
             cout<< endl;
         }
@@ -56,7 +57,7 @@ class Matrix{
 };
 
 int main(){
-    Matrix first(4,3,4,3);
+    Matrix first(2,2,2,2);
     first.test();
     return 0;
 }

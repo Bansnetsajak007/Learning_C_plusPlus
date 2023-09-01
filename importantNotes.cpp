@@ -65,4 +65,18 @@ int main() {
     return 0;
 }
 
+Compile-Time Polymorphism (Static Polymorphism)
+
+Compile-time polymorphism involves method or function overloading, 
+where multiple methods or functions with the same name but different parameter lists are defined in a class. 
+The appropriate method or function to be executed is determined at 
+compile time based on the number, types, and order of arguments passed.
+
+Run-Time Polymorphism (Dynamic Polymorphism):
+
+Run-time polymorphism involves method overriding, where a subclass provides a specific implementation for a 
+method that is already defined in its superclass. The method to be executed is determined at runtime based on the 
+actual type of the object, allowing a subclass to provide its own version of a method while still adhering to the method 
+signature defined in the superclass.
+
 */

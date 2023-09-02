@@ -76,7 +76,7 @@ Run-Time Polymorphism (Dynamic Polymorphism):
 
 Run-time polymorphism involves method overriding, where a subclass provides a specific implementation for a 
 method that is already defined in its superclass. The method to be executed is determined at runtime based on the 
-actual type of the object, allowing a subclass to provide its own version of a method while still adhering to the method 
+actual type of the object, allowing a subclass to provide its own version of a method while still joined to the method 
 signature defined in the superclass.
 
 */

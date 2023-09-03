@@ -7,6 +7,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 class Point {
 public:
     int x, y;
@@ -24,8 +26,10 @@ int main() {
     Point p2(3, 4);
 
     Point p3 = p1 + p2;  // Using the overloaded + operator
+    int sum = 10 + 10;
 
-    std::cout << "Resulting point: (" << p3.x << ", " << p3.y << ")" << std::endl;
+    cout << "Resulting point: (" << p3.x << ", " << p3.y << ")" << endl;
+    cout << "The sum of integers is " << sum;
 
     return 0;
 }

@@ -12,7 +12,7 @@ public:
     }
 };
 
-// Derived classes
+
 class Circle : public Shape {
 private:
     double radius;
@@ -34,7 +34,7 @@ private:
 public:
     Rectangle(double w, double h) : width(w), height(h) {}
 
-    // Implementation of the pure virtual function
+
     double area() const override {
         return width * height;
     }

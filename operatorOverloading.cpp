@@ -25,8 +25,8 @@ int main() {
     Point p1(1, 2);
     Point p2(3, 4);
 
-    Point p3 = p1 + p2;  // Using the overloaded + operator
-    int sum = 10 + 10;
+    Point p3 = p1 + p2;  // Using the overloaded + operator adds two custom user defined objects
+    int sum = 10 + 10;   // Here adds two integers values
 
     cout << "Resulting point: (" << p3.x << ", " << p3.y << ")" << endl;
     cout << "The sum of integers is " << sum;

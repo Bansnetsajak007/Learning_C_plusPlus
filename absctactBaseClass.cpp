@@ -1,5 +1,11 @@
 #include <iostream>
 
+/*
+    abstract base classes are those which cannot be instanciated and baically server as blueprints for other classes 
+    to inherit from and are used to achieve abstraction in oops
+*/
+
+
 // Abstract base class
 class Shape {
 public:

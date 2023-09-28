@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stdio.h>
 
 using namespace std;
 
@@ -122,7 +123,6 @@ void displayMatrix(int matrix [3][3]) {
     
 }
 
-
 int main() {
     int originalMatrix[3][3];
     int mainMatrix[3][3];
@@ -132,6 +132,9 @@ int main() {
 
     int constantValues[3];
 
+    float D,D_1,D_2,D_3;
+    float x,y,z;
+
     cout <<"Initializing the main matrix: " <<endl;
     mainInitialize(mainMatrix);
 
@@ -140,27 +143,35 @@ int main() {
     copyMatrix(secondMatrix,mainMatrix);
     copyMatrix(thirdMatrix,mainMatrix);
 
-    displayMatrix(firstMatrix);
-
-    // constantarray(constantValues);
+    constantarray(constantValues);
     
-    // includeconstantInFirst(mainMatrix,constantValues);
-    // // displayMatrix(mainMatrix);
-    // copyMatrix(firstMatrix,mainMatrix);
-    // cout <<"The determinant of first matrix is " <<determinant3x3(firstMatrix) <<endl;
+    D = determinant3x3(originalMatrix);
 
-    // includeconstantInSecond(mainMatrix,constantValues);
-    // // displayMatrix(mainMatrix);
-    // copyMatrix(secondMatrix,mainMatrix);
-    // cout <<"The determinant of second matrix is " <<determinant3x3(secondMatrix) <<endl;
+    copyMatrix(firstMatrix,mainMatrix);
+    includeconstantInFirst(firstMatrix,constantValues);
+    D_1 = determinant3x3(firstMatrix);
 
-    // includeconstantInThird(mainMatrix,constantValues);
-    // copyMatrix(thirdMatrix,mainMatrix);
-    // cout <<"The determinant of third matrix is " <<determinant3x3(thirdMatrix) <<endl;
-    
+    copyMatrix(secondMatrix,mainMatrix);
+    includeconstantInSecond(secondMatrix,constantValues);
+    D_2 = determinant3x3(secondMatrix);
+
+    copyMatrix(thirdMatrix,mainMatrix);
+    includeconstantInThird(thirdMatrix,constantValues);
+    D_3 = determinant3x3(thirdMatrix);
+
+    x = (D_1 / D);
+    y = (D_2 / D);
+    z = (D_3 / D);
 
 
-    cout <<"completed";
+    // cout << "X = " << x <<endl;
+    // cout << "Y = " << y <<endl;
+    // cout << "Z = " << z <<endl;
+
+    printf("X = %f\n", x);
+    printf("Y = %f\n", y);
+    printf("Z = %f\n", z);
+
 
     return 0;
 }

@@ -7,6 +7,9 @@
 */
 
 
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 /*
 Default Constructor:
 
@@ -65,6 +68,12 @@ int main() {
     return 0;
 }
 
+
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 Compile-Time Polymorphism (Static Polymorphism)
 
 Compile-time polymorphism involves method or function overloading, 
@@ -79,4 +88,48 @@ method that is already defined in its superclass. The method to be executed is d
 actual type of the object, allowing a subclass to provide its own version of a method while still joined to the method 
 signature defined in the superclass.
 
+let's See what are static data members and static member functions 
+
+    static data members and static member functions are features that are associated 
+    with the class itself rather than individual objects (instances) of the class. 
+    They are shared among all instances of the class and provide some useful capabilities.
+
+    Static Data Members:
+
+        What They Are: Static data members are variables that belong to the class rather than to individual 
+        objects created from the class. There is only one copy of a static data member that is shared by 
+        all instances of the class.
+
+        Declaration: You declare a static data member by using the static keyword before the data member's 
+        declaration inside the class.
+
+        Use Cases: Static data members are often used for data that is common to 
+        all instances of a class. For example, you might use a static data member to 
+        keep track of the total number of objects created from the class.
+
+        Access: You can access static data members using the class name itself, 
+        followed by the scope resolution operator ::.
+
+
+        Static Member Functions:
+           --> It can only access static members of the class
+
+
+            What They Are: Static member functions are functions that are associated with the class itself, 
+            not with any specific instance of the class. They do not have access to non-static (instance) members 
+            of the class, but they can access other static members (both data members and functions).
+
+            Declaration: You declare a static member function by using the static keyword before the function's 
+            return type in the class declaration.
+
+            Use Cases: Static member functions are often used for utility functions that do not need access to other
+            instance-specific data but are related to the class in some way. For example, you might use a static member 
+            function to calculate some value based on the class's static data members.
+
+            Access: You can call static member functions using the class name, 
+            followed by the scope resolution operator ::.
+
 */
+
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

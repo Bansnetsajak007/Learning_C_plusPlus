@@ -40,14 +40,14 @@ public:
 int main() {
 
     Student std1;
-    Student sajak;
+    Student std2;
 
     // This will give an error because get_details() is private
     // std1.get_details();  
     // std1.display_details();  
 
     std1.accessPrivateMethods();
-    sajak.accessPrivateMethods();
+    std2.accessPrivateMethods();
 
     return 0;
 }

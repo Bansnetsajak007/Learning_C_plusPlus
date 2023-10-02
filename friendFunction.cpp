@@ -10,8 +10,8 @@
     it's like making that function an unofficial member of the class. 
     This function can now access and manipulate the class's private data as if it were part of the class itself.
 
-    Friend functions can be useful in situations where you need to perform operations that involve t
-    he internal details of a class but don't want to make those details public for the world to see. 
+    Friend functions can be useful in situations where you need to perform operations that involve 
+    the internal details of a class but don't want to make those details public for the world to see. 
     They provide a way to maintain encapsulation (hiding the internal details) while still allowing certain 
     trusted functions to work with those details.
 */

@@ -75,7 +75,6 @@ public:
     // Friend function to add distances
     friend Distance1 addDistances(const Distance1& d1, const Distance2& d2);
 
-    // Display the distance
     void display() {
         std::cout << "Feet: " << feet << " Inches: " << inch << std::endl;
     }
@@ -91,7 +90,6 @@ public:
 
     friend Distance1 addDistances(const Distance1& d1, const Distance2& d2);
 
-    // Display the distance
     void display() {
         std::cout << "Feet: " << feet << " Inches: " << inch << std::endl;
     }

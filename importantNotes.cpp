@@ -112,7 +112,7 @@ let's See what are static data members and static member functions
 
 
         Static Member Functions:
-           --> It can only access static members of the class
+           --> It can only access static members of the class (only static functions/members)
 
 
             What They Are: Static member functions are functions that are associated with the class itself, 

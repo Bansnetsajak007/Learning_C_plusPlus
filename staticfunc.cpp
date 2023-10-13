@@ -6,14 +6,15 @@
     of individual objects but are related to the class in some way.
 */
 
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 class MathUtils
 {
 private:
-    // int x;
+    static int number;
+
 public:
     static int square(int x)
     {
@@ -28,12 +29,23 @@ public:
         }
         return n * factorial(n - 1);
     }
+
+    static void incrementNumber()
+    {
+        number += 1;
+    }
 };
 
-int main() {
+int MathUtils::number = 0;
+
+int main()
+{
     int square = MathUtils::square(6);
     int fact = MathUtils::factorial(5);
 
-    cout <<square <<endl <<fact;
+    MathUtils::incrementNumber();
+
+    cout << "Static data member is " << MathUtils::number << endl;
+    cout << square << endl << fact;
     return 0;
 }

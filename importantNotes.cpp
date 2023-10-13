@@ -132,3 +132,39 @@ let's See what are static data members and static member functions
 */
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+
+class Point {
+private:
+    int x;
+    int y;
+
+public:
+    Point(int x, int y) : x(x), y(y) {}
+
+    // A function to add two Point objects and return a new Point object
+    static Point addPoints(const Point& p1, const Point& p2) {
+        int newX = p1.x + p2.x;
+        int newY = p1.y + p2.y;
+        return Point(newX, newY);
+    }
+
+    // A function to display the coordinates of a Point object
+    void display() {
+        std::cout << "x: " << x << ", y: " << y << std::endl;
+    }
+};
+
+int main() {
+    Point point1(3, 4);
+    Point point2(1, 2);
+
+    // Call the addPoints function to add two Point objects by passing objects as arguments
+    Point result = Point::addPoints(point1, point2);
+
+    std::cout << "Resultant Point: ";
+    result.display();
+
+    return 0;
+}

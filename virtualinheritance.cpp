@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Common base class with a virtual function
+// Common base class with a virtual function(virtual base class)
 class BaseCommon {
 public:
     virtual void display() {

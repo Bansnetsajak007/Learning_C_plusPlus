@@ -109,7 +109,7 @@ int main() {
     updateNthRecord(filename, 4, newRecord);
 
     cout << "\nSearching for a student by name:" << endl;
-    searchByName(filename, "sajak");
+    searchByName(filename, "Bob");
 
     return 0;
 }

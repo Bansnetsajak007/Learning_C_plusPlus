@@ -25,7 +25,7 @@ private:
 public:
     Meters(double m = 0.0) : meters(m) {}
 
-    //function which returns the newely created Distance class object
+    //function which returns the newely created Distance class object(inside meters class)
     Distance convertToDistance() {
         int totalInches = static_cast<int>(meters * 3.3 * 12);
         int feet = totalInches / 12;

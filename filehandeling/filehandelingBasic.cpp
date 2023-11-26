@@ -16,6 +16,11 @@ class Student {
             cout<<"Enter Student name: "<<endl;
             cin >> name;
         }
+
+        void displayDetails() {
+            cout<< "ID:" <<id <<endl;
+            cout<< "Name:" <<name <<endl;
+        }
 };
 
 int main(){
@@ -24,7 +29,11 @@ int main(){
 
     std.getDetails();
     file.write((char *)&std , sizeof(std));
-    cout<<"Written to file successfully";
+    cout<<"Written to file successfully" <<endl;
+
+    ifstream fileRead("Student.txt");
+    fileRead.read((char*)&std , sizeof(std)); //reading a file
+    std.displayDetails();
     file.close();
     return 0;
 }

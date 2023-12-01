@@ -6,9 +6,7 @@ Wap to find smallest of two integers, float and double using function overloadin
 
 class Smallest {
     private:
-        int intnum1,intnum2;
-        float floatnum1,floatnum2;
-        double donum1,donum2;
+
     public:
 
         void min(int a , int b) {

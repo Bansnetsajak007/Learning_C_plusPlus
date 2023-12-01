@@ -4,36 +4,31 @@ Wap to find smallest of two integers, float and double using function overloadin
 
 #include<iostream>
 
+template <typename T>
+T smallest(T firstNum , T secondNum) {
+    if(firstNum < secondNum) {
+        std::cout<< "Smallest: " <<firstNum<< std::endl;
+    } else {
+            std::cout<< "Smallest: " <<secondNum<< std::endl;
+    }
+}
+
+
 class Smallest {
     private:
 
     public:
 
         void min(int a , int b) {
-            if(a<b){
-               std::cout<<"Smallest: "<<a <<std::endl;
-            } 
-            else {
-                std::cout<<"Smallest: "<<b <<std::endl;
-            }
+            smallest(a,b);
         }
 
         void min(float a , float b) {
-            if(a<b){
-               std::cout<<"Smallest: "<<a <<std::endl;
-            } 
-            else {
-                std::cout<<"Smallest: "<<b <<std::endl;
-            }
+            smallest(a,b);
         }
 
         void min(double a , double b) {
-            if(a<b){
-               std::cout<<"Smallest: "<<a <<std::endl;
-            } 
-            else {
-                std::cout<<"Smallest: "<<b <<std::endl;
-            }
+            smallest(a,b);
         }
 
 

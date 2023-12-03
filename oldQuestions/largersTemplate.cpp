@@ -1,4 +1,4 @@
-//Wap using template to find largest number of an array of type int and float
+//Wap using function template to find largest number of an array of type int and float
 
 #include<iostream>
 

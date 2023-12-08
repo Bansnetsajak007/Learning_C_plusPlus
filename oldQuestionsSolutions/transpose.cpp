@@ -1,5 +1,3 @@
-//calculating transpose of matrix 
-
 #include <iostream>
 
 class Matrix {
@@ -11,9 +9,12 @@ private:
 public:
     // Function to take input for the matrix
     void inputMatrix() {
+        rows = 3;
+        cols = 3;
+
         std::cout << "Enter elements of the 3x3 matrix:" << std::endl;
-        for (int i = 0; i < 3; ++i)
-            for (int j = 0; j < 3; ++j)
+        for (int i = 0; i < rows; ++i)
+            for (int j = 0; j < cols; ++j)
                 std::cin >> data[i][j];
     }
 

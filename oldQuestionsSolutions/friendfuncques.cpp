@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-class StringConcatenator;  //forward delceration
+class StringConcatenator;  //forward delceration    
 
 class StringManipulator {
 private:

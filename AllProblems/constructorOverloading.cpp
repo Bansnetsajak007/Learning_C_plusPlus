@@ -1,3 +1,5 @@
+//program demonstrating the constructor overloading
+
 #include <iostream>
 using namespace std;
 
@@ -31,6 +33,7 @@ public:
 
 int main() {
 
+    //objects are being created dynamically
     Person* person1 = new Person();  //Default constructor gets called
     Person* person2 = new Person("Hari");  //constructor with only name paramater gets called
     Person* person3 = new Person("Hari" , 45);  // constructor with name and age gets called

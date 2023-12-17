@@ -52,7 +52,6 @@ int main() {
     // Concatenate strings using the friend function
     StringConcatenator result = concatenateStrings(string1, string2);
 
-    // Display the concatenated string
     result.display();
 
     return 0;

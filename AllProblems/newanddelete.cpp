@@ -28,9 +28,8 @@ class Person{
 
 int main(){
 
-    //creating the pointer that points to instance of Person class
+    //creating the pointer that points to instance of Person class (points to memory location of Person class objects)
     Person *personPointer = new Person("Sajak");
-
 
     personPointer->display_name();
 

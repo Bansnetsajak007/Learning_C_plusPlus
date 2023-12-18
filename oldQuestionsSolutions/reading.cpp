@@ -1,5 +1,8 @@
 //write a c++ program to write "PURBANCHAL UNIVERSITY" on a file and read it back to display in console.
 
+//ofstream ----> output file stream (FOR WRITING IN FILE)
+//ifstream ----> input file stream (FOR READING FROM FILE)
+
 #include <iostream>
 #include <fstream>
 #include <string>

@@ -20,6 +20,8 @@ T* sort(T arr[], U n)
 	}
 	return arr;	
 }
+
+
 int main()
 {
 	 int intArray[100] = {1, 10, 100, 3, 2, 5, 20, 18, 28, 0, 12, 4};

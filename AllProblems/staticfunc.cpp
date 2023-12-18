@@ -36,7 +36,7 @@ public:
     }
 };
 
-int MathUtils::number = 0;
+MathUtils::number = 0;
 
 int main()
 {

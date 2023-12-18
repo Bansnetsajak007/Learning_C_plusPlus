@@ -1,9 +1,12 @@
+//this is the problem solved by virtual function
+
+
 #include <iostream>
 
 class Base {
 public:
     // Declare a virtual function
-    virtual void display() {
+     void display() {
         std::cout << "Base class display() called." << std::endl;
     }
 };
@@ -11,7 +14,7 @@ public:
 class Derived : public Base {
 public:
     // Override the virtual function in the derived class
-    void display() override {
+    void display()  {
         std::cout << "Derived class display() called." << std::endl;
     }
 };

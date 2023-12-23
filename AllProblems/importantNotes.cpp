@@ -194,36 +194,6 @@ In summary, the first approach is preferred for its better adherence to the prin
 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-#include<iostream>
-#include<string>
-
-using namespace std;
-
-int main() {
-    int numerator , denominator , result;
-    try
-    {
-        cout<<"Enter numerator: ";
-        cin>>numerator;
-        cout<<"Enter denominator: ";
-        cin>>denominator;
-
-        if(denominator < 0) {
-            throw exception("Denominator cannot be 0");
-        }
-
-        result = (numerator / denominator);
-        cout<<"Result : " << result <<endl;
-
-    }
-    catch(const std::exception& e)
-    {
-        cerr << e.what() << '\n';
-    }
-    
-    return 0;
-}
-
 
 
 

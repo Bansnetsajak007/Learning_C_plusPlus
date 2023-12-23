@@ -1,3 +1,6 @@
+//Create a simple linked list in C++ with functions to insert a node at the beginning, 
+//delete a node, and display the list.
+
 #include<iostream>
 
 using namespace std;

@@ -70,7 +70,7 @@ void searchByName(const string& filename, const string& searchName) {
     ifstream file(filename, ios::binary);
     if (file.is_open()) {
         Student student;
-        bool found = false;
+        bool found = false;  //assume record doesn't exist
 
         while (file.read(reinterpret_cast<char*>(&student), sizeof(Student))) {
             if (student.name == searchName) {
@@ -96,9 +96,11 @@ int main() {
     Student student1("Alice", 101, 85.5);
     Student student2("Bob", 102, 76.0);
     Student student3("Charlie", 103, 92.5);
+    Student student4("Sajak", 103, 92.5);
 
     writeToFile(filename, student1);
     writeToFile(filename, student2);
+    writeToFile(filename, student3);
     writeToFile(filename, student3);
 
     cout << "\nReading the third record:" << endl;
@@ -109,7 +111,7 @@ int main() {
     updateNthRecord(filename, 4, newRecord);
 
     cout << "\nSearching for a student by name:" << endl;
-    searchByName(filename, "Bob");
+    searchByName(filename, "Alice");
 
     return 0;
 }

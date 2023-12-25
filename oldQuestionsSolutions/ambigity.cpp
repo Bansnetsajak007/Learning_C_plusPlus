@@ -22,7 +22,7 @@ public:
     }
 };
 
-class Derived : public Base1, public Base2 {
+class Derived : public virtual Base1, public virtual Base2 {
 public:
     using Base1::display();
     using Base2::display();

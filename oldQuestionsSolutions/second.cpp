@@ -1,5 +1,5 @@
 /*
-Wap to find smallest of two integers, float and double using function overloading 
+Wap to find smallest of two integers, float and double using function overloading and templates
 */
 
 #include<iostream>

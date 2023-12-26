@@ -33,8 +33,6 @@ class Employee{
         }
 
         void writeToFile(ofstream& outputFile) {
-            // outputFile <<"Details of the Employee" <<endl;
-            // outputFile <<"_______________________"<<endl;
             outputFile <<id <<"\t" <<Name <<"\t" <<address <<"\t" <<endl;
         }
 };

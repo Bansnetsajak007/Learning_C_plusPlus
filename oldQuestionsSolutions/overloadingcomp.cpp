@@ -1,5 +1,19 @@
 /*
     wap using function overloading to compare two integer and two float numbers
+
+    advantages of operator overloadin
+
+        It improves code readability by allowing the use of familiar operators12.
+
+        It ensures that objects of a class behave consistently with built-in types and other user-defined types13.
+
+        It makes it simpler to write code, especially for complex data types14.
+
+        It allows for code reuse by implementing one operator method and using it for other operators12.
+
+        It is used because it allows programming using notation nearer to the target domain and 
+        allows user-defined types a similar level of syntactic support as types built into a language
+
 */
 
 #include<iostream>

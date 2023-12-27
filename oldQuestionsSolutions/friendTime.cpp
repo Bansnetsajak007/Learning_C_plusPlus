@@ -1,5 +1,6 @@
-// wap to define a class with data member hour minuetes and seconds add two time and display 
-//time in appropriate format using friend function in cpp
+/* wap to define a class with data member hour minuetes and seconds add two time and display 
+
+*/
 
 #include <iostream>
 #include <iomanip>
@@ -11,10 +12,12 @@ private:
    int seconds;
 
 public:
+   Time() {}  //default constructor
    Time(int h, int m, int s) : hour(h), minutes(m), seconds(s) {}
 
    friend Time add_time(const Time& t1, const Time& t2);
 
+   //friend function which overloads << operator
    friend std::ostream& operator<<(std::ostream& os, const Time& t) {
        os << std::setfill('0') << std::setw(2) << t.hour << ":"
           << std::setw(2) << t.minutes << ":"
@@ -23,6 +26,8 @@ public:
    }
 };
 
+
+//friend function to add two times
 Time add_time(const Time& t1, const Time& t2) {
    int total_seconds = t1.seconds + t2.seconds;
    int carry_minutes = total_seconds / 60;
@@ -37,6 +42,7 @@ Time add_time(const Time& t1, const Time& t2) {
 }
 
 int main() {
+   Time obj;
    Time time1(10, 30, 45);
    Time time2(5, 15, 20);
 

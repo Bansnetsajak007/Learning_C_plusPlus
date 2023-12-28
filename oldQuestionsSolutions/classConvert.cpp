@@ -1,8 +1,9 @@
 //wap in C++ to convert one class to another class type by writing conversion routine in source class
+// simple program to convert object of one class to another
 
 #include <iostream>
 
-// Forward declaration of SourceClass
+
 class SourceClass;
 
 class DestinationClass {

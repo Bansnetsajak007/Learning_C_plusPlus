@@ -14,13 +14,13 @@ public:
         age = 0;
     }
 
-    // Parameterized constructor with name
+    // Parameterized constructor with one paramater
     Person(string n) {
         name = n;
         age = 0;
     }
 
-    // Parameterized constructor with name and age
+    // Parameterized constructor with tow parameter name and age
     Person(string n, int a) {
         name = n;
         age = a;

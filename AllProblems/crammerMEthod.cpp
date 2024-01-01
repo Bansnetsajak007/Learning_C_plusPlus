@@ -133,7 +133,7 @@ int main() {
     int constantValues[3];
 
     float D,D_1,D_2,D_3;
-    float x,y,z;
+    int x,y,z;
 
     cout <<"Initializing the main matrix: " <<endl;
     mainInitialize(mainMatrix);
@@ -168,9 +168,9 @@ int main() {
     // cout << "Y = " << y <<endl;
     // cout << "Z = " << z <<endl;
 
-    printf("X = %f\n", x);
-    printf("Y = %f\n", y);
-    printf("Z = %f\n", z);
+    printf("X = %d\n", x);
+    printf("Y = %d\n", y);
+    printf("Z = %d\n", z);
 
 
     return 0;

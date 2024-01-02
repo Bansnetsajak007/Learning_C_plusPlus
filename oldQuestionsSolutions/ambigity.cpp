@@ -24,8 +24,7 @@ public:
 
 class Derived : public virtual Base1, public virtual Base2 {
 public:
-    using Base1::display();
-    using Base2::display();
+    
 };
 
 int main() {

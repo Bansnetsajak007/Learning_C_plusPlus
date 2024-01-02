@@ -22,7 +22,7 @@ public:
     }
 };
 
-class Derived : public virtual Base1, public virtual Base2 {
+class Derived : public  Base1, public  Base2 {
 public:
     
 };
@@ -30,7 +30,7 @@ public:
 int main() {
     Derived obj;
 
-    obj.Base1::display();  // No ambiguity with virtual inheritance
+    obj.display();  // No ambiguity with virtual inheritance
 
     return 0;
 }

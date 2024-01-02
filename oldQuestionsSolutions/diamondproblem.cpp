@@ -1,6 +1,6 @@
 /*
-
 IMPORTANT CONCEPT IN INHERITANCE (diamond problem)
+
 The diamond problem is a term used in object-oriented programming, especially in languages that support multiple inheritance, like C++. It arises when a class inherits from two classes that have a common ancestor. Let me break it down for you.
 
 Imagine you have a class A, and two other classes B and C, both inheriting from A. Now, let's say there's another class D that inherits from both B and C. Here's how it looks:
@@ -18,7 +18,7 @@ The problem arises when you try to create an object of class D and call doSometh
 To solve this problem, C++ introduces virtual inheritance. By using the virtual keyword when inheriting from a common ancestor, you can ensure that there is only one instance of the shared base class. This way, the diamond problem is mitigated, and the compiler knows which version of doSomething() to use.    
 
 In C++, you would use virtual inheritance like this:
-ghjr5tttggdfsdrtyhgfdgfghgtrtrth
+jakjak
 
     class Basecommon {
     public:
@@ -39,7 +39,7 @@ ghjr5tttggdfsdrtyhgfdgfghgtrtrth
         // ...
     };
 
-int above code as you can see class Base1 and class Base2 inherits virtually from class Basecommon 
+in above code as you can see class Base1 and class Base2 inherits virtually from class Basecommon 
 but what does it mean to inheit to inherit virtually
 
 When a class inherits virtually from a common base class,The virtual keyword in the inheritance means that there will be only one shared instance of the BaseCommon class in the entire hierarchy, even if there are multiple paths through which it is inherited.

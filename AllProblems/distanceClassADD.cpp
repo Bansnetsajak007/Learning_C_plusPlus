@@ -1,4 +1,4 @@
-
+//write a friend function to addd distance of two class
 
 
 #include <iostream>

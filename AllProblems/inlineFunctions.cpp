@@ -1,5 +1,6 @@
 /*
-    An inline function is a function that is expanded in line when it is called. When the inline function is called whole code of the inline function gets 
+    An inline function is a function that is expanded in line when it is called. When the inline function is called 
+    whole code of the inline function gets 
     inserted or substituted at the point of the inline function call.
 
 */

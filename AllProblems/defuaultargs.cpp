@@ -8,6 +8,7 @@ using namespace std;
 
 class Calculate{
   public:
+  //when calling this add function if programmer doesnot passes any arguments then by default of those arguments become 0
     void add(int x=0 , int y=0){
         cout<< x + y <<endl;
     }  

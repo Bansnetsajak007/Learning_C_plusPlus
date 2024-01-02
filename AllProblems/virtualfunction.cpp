@@ -1,3 +1,8 @@
+/*
+virtual function is a function in a base class that is marked with the virtual keyword. The main purpose of virtual functions is to enable polymorphism, allowing derived classes to provide their own implementation of the function.
+
+*/
+
 //this is the problem solved by virtual function
 
 

@@ -1,3 +1,8 @@
+/*
+    WAP to find transpose of 3x3 matrix  using OOPS algorithm by writing seperate function for input Calculate
+    and matrixDisplay.
+*/
+
 #include <iostream>
 
 class Matrix {

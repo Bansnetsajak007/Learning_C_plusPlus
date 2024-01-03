@@ -1,5 +1,7 @@
 /*
 A virtual base class in C++ is a base class that is declared as virtual in a derived class to ensure a single shared instance of the base class in the hierarchy, addressing the "diamond problem" in multiple inheritance.
+
+so in this program Animal is virtual base class
 */
 
 #include <iostream>

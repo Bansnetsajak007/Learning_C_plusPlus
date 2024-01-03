@@ -24,7 +24,9 @@ public:
 
 class Derived : public  Base1, public  Base2 {
 public:
-    
+    void display() override {
+        std::cout <<"Derived display";
+    }
 };
 
 int main() {

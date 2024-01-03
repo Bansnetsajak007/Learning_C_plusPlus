@@ -10,7 +10,6 @@ What are streams in c++
 
 
 
-
 Description of IO class hierarchy in brief
 
 ios_base: The root class of the I/O class hierarchy.

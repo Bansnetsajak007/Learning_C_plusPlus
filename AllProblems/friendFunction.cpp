@@ -14,6 +14,34 @@
     the internal details of a class but don't want to make those details public for the world to see. 
     They provide a way to maintain encapsulation (hiding the internal details) while still allowing certain 
     trusted functions to work with those details.
+
+    features of friend functions
+
+        1. Access to Private Members: Friend functions can access private and protected members of a class.
+
+        2. Non-Member Function: Friend functions are not members of a class but are declared within the class using the `friend` keyword.
+
+        3. Bi-directional Access: Friend functions provide bi-directional access, allowing them to access private members of another class and vice versa.
+
+        4. Flexibility in Design: Friend functions enhance design flexibility by enabling external functions to interact with class internals without being members of the class.
+
+        5. Declared Outside the Class: Friend functions are declared outside the class definition, promoting a clear separation between member functions and friend functions in the program structure.
+
+
+    disadvantages of friend functions
+
+   
+
+    1. Reduced Encapsulation: Friend functions can compromise class encapsulation by accessing private members.
+
+    2. Global Visibility: Friend functions, often declared outside the class, increase visibility globally.
+
+    3. Complexity and Maintenance: The use of many friend functions can lead to complex and less maintainable code.
+
+    4. Security Concerns: Granting external functions access to private members may raise security concerns.
+
+    5. Violation of Information Hiding: Friend functions can potentially violate the principle of information hiding.
+
 */
 
 

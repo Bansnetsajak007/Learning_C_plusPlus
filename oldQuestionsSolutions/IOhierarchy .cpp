@@ -1,8 +1,5 @@
 
 
-
-
-
 /*
 
 What are streams in c++

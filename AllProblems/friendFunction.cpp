@@ -30,7 +30,6 @@
 
     disadvantages of friend functions
 
-   
 
     1. Reduced Encapsulation: Friend functions can compromise class encapsulation by accessing private members.
 

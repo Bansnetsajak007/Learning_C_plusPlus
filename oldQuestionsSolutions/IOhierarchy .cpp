@@ -3,7 +3,7 @@
 /*
 
 What are streams in c++
-=> In technical terms, streams are a powerful abstraction for input and output operations. They provide a flexible and extensible way to handle communication with various sources and destinations, such as files, the console, or memory buffers. 
+=> In technical terms, streams are a powerful abstraction for input and output operations. They provide a flexible and extensible way to handle communication with various sources and destinations, such as files, the console, or memory buffers.In simple terms, streams basically mean flow of data between different medium like stander input to stander output and so on 
 
 
 

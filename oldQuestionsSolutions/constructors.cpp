@@ -1,6 +1,6 @@
 //WAP to demonstrate the concept of copy costructor with its important features of constructors
 
-// copy constructor is a type of constructor wich is used to copy data of one object to another
+// copy constructor is a type of constructor wich is used to copy data of one object to another of same object
 
 /*
 

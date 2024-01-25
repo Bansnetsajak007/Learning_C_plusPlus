@@ -21,13 +21,14 @@ class Employee{
         Employee(int id , string name , string address) : id(id) , Name(name) , address(address) {}
 
 
-        void displayFormat() {
-            cout <<"Details of the Employee" <<endl;
-            cout <<"_______________________"<<endl;
-            cout <<"id\t" <<"Name\t" <<"Address\t"<<endl;
-            cout <<endl;
-        }
+        // void displayFormat() {
+        //     cout <<"Details of the Employee" <<endl;
+        //     cout <<"_______________________"<<endl;
+        //     cout <<"id\t" <<"Name\t" <<"Address\t"<<endl;
+        //     cout <<endl;
+        // }
 
+        //displays on the console
         void display() {
             cout<<id <<"\t" <<Name <<"\t" <<address <<"\t";
         }
@@ -44,10 +45,10 @@ int main(){
     Employee employee[nEmployees] = {
             Employee (1,"Hari", "Birtamode"),
             Employee (2,"Ram", "Birtamode"),
-            Employee (3,"shyam", "Damak"),
+            Employee (3,"gita", "Kathmandu"),
     };
 
-    employee->displayFormat();
+    // employee->displayFormat();
 
     ofstream outputFile("employee_details.txt");                 
 

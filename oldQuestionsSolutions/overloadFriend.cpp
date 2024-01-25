@@ -47,10 +47,10 @@ class Complex {
         double real;
         double img;
 
+        friend Complex operator+ (const Complex& rhs , const Complex& lhs);  //function decleration
     public:
         Complex(double real , double img) : real(real) , img(img) {}
 
-        friend Complex operator+ (const Complex& rhs , const Complex& lhs);  //function decleration
 
         void display() {
             cout << real << " + " << img << "i" << std::endl;

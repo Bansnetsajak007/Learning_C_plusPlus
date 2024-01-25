@@ -12,6 +12,7 @@ private:
 public:
     StringManipulator(const std::string& s) : str(s) {}
 
+    //friend function declaration
     friend StringConcatenator concatenateStrings(const StringManipulator& str1, const StringManipulator& str2);
 };
 
@@ -33,7 +34,7 @@ public:
 // Friend function definition to concatenate two strings
 StringConcatenator concatenateStrings(const StringManipulator& str1, const StringManipulator& str2) {
     std::string result = str1.str + str2.str;
-    return StringConcatenator(result);
+    return StringConcatenator(result);  //creates anonymous object 
 }
 
 int main() {

@@ -32,6 +32,11 @@ class Wall{
         double height;
 
     public:
+      //default constructor
+        Wall(){
+
+        }
+        //parameterized constructor
         Wall(double length , double height) : length(length) , height(height) {}
 
         //copy constructor
@@ -46,12 +51,15 @@ class Wall{
 };
 
 int main() {
-  // create an object of Wall class
+  // create an object of Wall class (calls parameterized constructor)
   Wall wall1(10.5, 8.6);
+  //default constructor gets called
+  Wall obj;
 
   // copy contents of wall1 to wall2
   //Here, the wall2 object calls its copy constructor by passing the address 
 // of the wall1 object as its argument i.e. &obj = &wall1.
+//copy constructor gets call in this
   Wall wall2 = wall1;
 
   // print areas of wall1 and wall2

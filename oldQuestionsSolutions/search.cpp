@@ -18,7 +18,7 @@ public:
 
 class StudentDatabase {
 private:
-    const string filename = "students.dat";
+    const string filename = "students.txt";
     Student students[10];
 
 public:
@@ -47,6 +47,7 @@ public:
         }
 
         outFile.write(reinterpret_cast<const char*>(students), sizeof(students));
+        // outFile << students << endl;
         outFile.close();
     }
 
